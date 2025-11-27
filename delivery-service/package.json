@@ -1,0 +1,19 @@
+{
+  "name": "delivery-service",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "amqplib": "^0.10.9",
+    "axios": "^1.13.2",
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

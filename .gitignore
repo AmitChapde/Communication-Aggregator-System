@@ -1,0 +1,13 @@
+# Ignore all node_modules in microservices
+task-router-service/node_modules/
+delivery-service/node_modules/
+logging-service/node_modules/
+
+# Optional: environment files
+task-router-service/.env
+delivery-service/.env
+logging-service/.env
+
+# OS / IDE files
+.DS_Store
+*.log

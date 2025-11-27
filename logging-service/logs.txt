@@ -1,0 +1,6 @@
+{"timestamp":"2025-11-27T00:34:31.695Z","type":"ROUTED","message":{"messageId":"msg-1001","to":"+919999999999","channel":"sms","body":"Hello User!"}}
+{"timestamp":"2025-11-27T00:34:31.714Z","type":"DELIVERED_SMS","message":{"messageId":"msg-1001","to":"+919999999999","channel":"sms","body":"Hello User!"}}
+{"timestamp":"2025-11-27T00:44:55.040Z","type":"ROUTED","message":{"messageId":"12345","channel":"sms","payload":{"to":"9876543210","message":"Hello!"}}}
+{"timestamp":"2025-11-27T00:44:55.056Z","type":"DELIVERED_SMS","message":{"messageId":"12345","channel":"sms","payload":{"to":"9876543210","message":"Hello!"}}}
+{"timestamp":"2025-11-27T01:18:06.265Z","type":"ROUTED","message":{"channel":"sms","payload":{"to":"9876543210","message":"Hello!"},"messageId":"87d944c9-d40b-45b7-a633-dac7a07c9856"}}
+{"timestamp":"2025-11-27T01:18:06.283Z","type":"DELIVERED_SMS","message":{"channel":"sms","payload":{"to":"9876543210","message":"Hello!"},"messageId":"87d944c9-d40b-45b7-a633-dac7a07c9856"}}
