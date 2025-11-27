@@ -1,11 +1,22 @@
 const amqp = require('amqplib');
 
 
-module.exports = async function(queue, message) {
-const conn = await amqp.connect('amqp://localhost');
-const channel = await conn.createChannel();
-await channel.assertQueue(queue);
+const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
+module.exports = async function (queue, message) {
+  try {
+   
+    const conn = await amqp.connect(RABBITMQ_URL);
+    const channel = await conn.createChannel();
 
-channel.sendToQueue(queue, Buffer.from(JSON.stringify(message)));
+    await channel.assertQueue(queue);
+
+   
+    channel.sendToQueue(queue, Buffer.from(JSON.stringify(message)));
+
+    console.log(`Message sent to queue ${queue}`);
+  } catch (err) {
+    console.error('Failed to connect or send message to queue:', err);
+    throw err;
+  }
 };
